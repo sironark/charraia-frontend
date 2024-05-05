@@ -2,9 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     * {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 700;
+       
+        
     }
     body{
         

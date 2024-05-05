@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import backgroundImage from './assets/backgroundimage.png'
 import { Route, Routes } from "react-router-dom"
-import LoginPage from "./pages/LoginPage"
 import Timeline from "./pages/TimelinePage"
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
   return (
     <AppContainer>
       <Routes>
-            <Route path="/" element={<LoginPage />} />
-            <Route path="/timeline" element={<Timeline/>} />
+            <Route path="/" element={<Timeline/>} />
           </Routes>
     </AppContainer>
   )

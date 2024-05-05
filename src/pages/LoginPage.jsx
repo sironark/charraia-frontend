@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import axios from "axios";
 
 export default function LoginPage() {
   const [cell, setCell] = useState("");
@@ -14,11 +13,11 @@ export default function LoginPage() {
     e.preventDefault();
 
     setBtnDisabled(true);
-
+/*
     const newLogin = {
       cell: cell,
       name: name,
-    };
+    };*/
     navigate("/timeline");
 /*
     try {
