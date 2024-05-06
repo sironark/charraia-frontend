@@ -30,7 +30,7 @@ export default function Timeline(){
         <>
     <HeaderComponent/>
     <TimelineComponent>
-    
+        
         {listArray.map((item, index) =>
             <ItensComponent key={index} item={item} />
         )}

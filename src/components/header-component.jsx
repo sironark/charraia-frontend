@@ -8,6 +8,10 @@ export default function HeaderComponent() {
                 <p>LISTA DE PRESENTES </p>
                 <p> CHÁ DE PANELA GABRIEL E GLEISI</p>
             </div>
+            <div className="alert">
+                <p>Dia 06/07 às 15:00hrs! Confirme sua presença com os noivos.</p>
+                <p>Escolha abaixo o item que irá presentear no chá de panela</p>
+            </div>
         </Container>
     )
 }
@@ -20,7 +24,15 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    .alert{
+        width: 100%;
+        height: 50px;
+        background-color: #fcfc7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .imgProfile {
         margin-top: 20px;
