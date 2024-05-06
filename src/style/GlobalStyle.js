@@ -2,18 +2,19 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     * {
-       
+        font-family: 'Courier New', Courier, monospace;
         
     }
     body{
-        
+        font-family: 'Courier New', Courier, monospace;
         
     }
     button {
+        /*
         outline: none;
         border: none;
         border-radius: 5px;
-        background-color: #1877F2;
+        background-color: #9F9F9F;
         color: #FFFFFF;
         cursor: pointer;
         width: 100%;
@@ -23,12 +24,12 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0em;
-
+*/
     }
     
     input {
-    font-size: 20px;
-    width: calc(100% - 200px);
+    font-size: 15px;
+    width: calc(100% - 20px);
     border-radius: 6px;
     outline: none;
     border: 1px solid #ccc;
@@ -42,8 +43,8 @@ input:focus {
 }
 
 input::placeholder {
-    font-family: Oswald;
-    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
@@ -51,8 +52,8 @@ input::placeholder {
     color: #9F9F9F;
 
     @media (max-width: 767px) {
-    font-family: Oswald;
-    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0em;
@@ -67,7 +68,7 @@ input::placeholder {
         align-items: center;
         gap: 15px;
         width: 100%;
-        border-radius: 5px;
+        
     }
     a {
         font-weight: 700;

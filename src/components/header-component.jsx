@@ -13,13 +13,14 @@ export default function HeaderComponent() {
 }
 
 const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.5); 
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     .imgProfile {
         margin-top: 20px;
@@ -41,6 +42,10 @@ const Container = styled.div`
         }
         :first-child{
             font-weight: 700;
+        }
+        :last-child{
+            margin-top: 10px;
+            font-size: 20px;
         }
         
     }
