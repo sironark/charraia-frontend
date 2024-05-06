@@ -9,7 +9,6 @@ import styled from "styled-components";
 
 
 export default function Timeline(){
-    const navegate = useNavigate();
     const [listArray, setListArray] = useState([])
 
     useEffect(()=> {

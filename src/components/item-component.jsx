@@ -97,6 +97,7 @@ export default function ItensComponent(props) {
                       backgroundColor: 'rgba(255, 255, 255, 0.5)'
                     },
                     content: {
+                      zIndex: 100,
                       border: '1px solid gray',
                       background: '#ffffff',
                       borderRadius: '10px',
@@ -153,7 +154,8 @@ export default function ItensComponent(props) {
                 
             </ReactModal>
            
-            <Card>
+            <Card quantity={props.item.quantity}>
+                <div className="overlay"><p>Item já foi escolhido</p></div>
                 <div className="leftPart">
                     <p className="name">{props.item.name}</p>
                     <p className="description">{props.item.description}</p>
@@ -319,6 +321,22 @@ const Card = styled.div`
     color: gray;
     position: relative;
 
+    .overlay{
+        display: ${(props) => (!props.quantity? "flex" : "none")};
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(104, 104, 104, 0.78);
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        z-index:0;
+        p{
+            color: white;
+            font-weight: 700;
+        }
+    }
     
 
     .button{
@@ -344,8 +362,9 @@ const Card = styled.div`
         }
         div{
         width: 20px;
-       
         font-size: 30px;
+        display: ${(props) => (!props.quantity? "none" : "inirit")};
+        
     }
        
     }
