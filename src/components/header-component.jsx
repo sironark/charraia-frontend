@@ -18,7 +18,7 @@ export default function HeaderComponent() {
 
 const Container = styled.div`
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: rgba(255, 255, 255, 0.5); 
     z-index: 1;
     display: flex;
@@ -26,12 +26,18 @@ const Container = styled.div`
     align-items: center;
     .alert{
         width: 100%;
-        height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-sizing: border-box;
+        height: auto;
         background-color: #fcfc7f;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        p{
+            text-align: center;
+        }
     }
 
     .imgProfile {

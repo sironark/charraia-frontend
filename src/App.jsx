@@ -17,16 +17,18 @@ function App() {
 export default App
 
 const AppContainer = styled.main`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-position: center;
+  background-attachment: fixed;
 
   @media (min-width: 680px) {
     background-repeat: repeat;
-    background-size: 680px;
+    background-size: 670px;
   }
 
 

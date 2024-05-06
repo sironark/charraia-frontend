@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import HeaderComponent from "../components/header-component";
 import ItensComponent from "../components/item-component";
-import { useNavigate } from "react-router-dom";
 import apiAuth from "../services/apiAuth";
 import styled from "styled-components";
 
@@ -41,5 +40,11 @@ export default function Timeline(){
 }
 
 const TimelineComponent = styled.div`
-    
+    padding-bottom: 50px;
+
+    @media (min-width: 680px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 `

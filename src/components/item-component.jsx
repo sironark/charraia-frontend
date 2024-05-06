@@ -138,7 +138,7 @@ export default function ItensComponent(props) {
                     <Bottom>
                         <div className="checkbox">
                             <input type="checkbox" required/>
-                            <h1>Ao confirmar, os noivos saberão sua intenção de presente de chá de panela!</h1>
+                            <h1>Ao confirmar, os noivos saberão sua intenção de presente do chá de panela!</h1>
                         </div>
                         <h2>- 1 {props.item.name}</h2>
                     </Bottom>
