@@ -4,6 +4,8 @@ import ReactModal from "react-modal";
 import styled from "styled-components"
 import apiAuth from "../services/apiAuth";
 import check from "../assets/verificado.gif"
+import { whatsapp } from "../services/whatsappSend";
+
 
 export default function ItensComponent(props) {
     const [statusModal, setStatusModal] = useState(false);
@@ -23,7 +25,7 @@ export default function ItensComponent(props) {
         setStatusModal(false);
     }
 
-    function confirm(e){
+    async function confirm(e){
         e.preventDefault();
         
         setDisabled(true);
@@ -33,17 +35,21 @@ export default function ItensComponent(props) {
         itemId: Number(props.item.id)
        }
        console.log(body);
-       apiAuth.insertToCart(body)
+       await apiAuth.insertToCart(body)
        .then((res)=> {
             console.log(res.data)
             setStatusModal(false);
 
             apiAuth.editQuantity(props.item.id)
             .then(()=> {
+                
                 setModalCheck(true);
                 setTimeout(()=> {
-                    setModalCheck(false)
-                    window.location.reload();
+                    setModalCheck(false);
+                    whatsapp.SendMessage(props.item.name, props.item.description, cell, name)
+                    .then(()=> {
+                        window.location.reload();
+                    });
                 },2000)
                 setDisabled(false);
                 
@@ -120,7 +126,7 @@ export default function ItensComponent(props) {
 
                 <Form onSubmit={confirm}>
                     <input type="text" 
-                    placeholder="NOME COMPLETO" 
+                    placeholder="NOME + SOBRENOME" 
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
