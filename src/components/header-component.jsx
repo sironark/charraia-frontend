@@ -9,8 +9,8 @@ export default function HeaderComponent() {
                 <p> CHÁ DE PANELA GABRIEL E GLEISI</p>
             </div>
             <div className="alert">
-                <p>Dia 06/07 às 15:00hrs! Confirme sua presença com os noivos.</p>
-                <p>Escolha abaixo o item que irá presentear no chá de panela</p>
+                <p>Dia 06/07 às 15hrs! Confirme sua presença com os noivos.</p>
+                <p>Escolha o item que vai presentear os noivos.</p>
             </div>
         </Container>
     )
