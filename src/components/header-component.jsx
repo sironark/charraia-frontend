@@ -3,14 +3,20 @@ import image from "../assets/gg.jpg"
 export default function HeaderComponent() {
     return(
         <Container>
-            <div className="imgProfile"></div>
+            
             <div className="title">
-                <p>LISTA DE PRESENTES </p>
-                <p> CHÁ DE PANELA GABRIEL E GLEISI</p>
+                <div>
+                <div className="imgProfile"></div>
+                <h1>CHÁ DE PANELA</h1>
+                <h2>GLEISI E GABRIEL</h2>
+                
+                <p>LISTA DE PRESENTES </p>  
+                </div>
+                
             </div>
             <div className="alert">
-                <p>Dia 06/07 às 15hrs! Confirme sua presença com os noivos.</p>
-                <p>Escolha o item que vai presentear os noivos.</p>
+                <p>Dia 06/07 às 15 horas!</p>
+                <p>Escolha o item que você deseja presentear os noivos na lista abaixo:</p>
             </div>
         </Container>
     )
@@ -18,7 +24,7 @@ export default function HeaderComponent() {
 
 const Container = styled.div`
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.5); 
     z-index: 1;
     display: flex;
@@ -37,6 +43,7 @@ const Container = styled.div`
         flex-direction: column;
         p{
             text-align: center;
+            font-family: "Ubuntu", sans-serif;
         }
     }
 
@@ -53,18 +60,36 @@ const Container = styled.div`
   }
   .title{
         margin-top: 10px;
+        letter-spacing: 0em;
         p{
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Ubuntu", sans-serif;
             font-style: normal;
             text-align: center;
-        }
-        :first-child{
+            margin-top: 3px;
+            font-size: 20px;
             font-weight: 700;
         }
-        :last-child{
-            margin-top: 10px;
+       div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+        h1{
+            margin-top: 5px;
             font-size: 20px;
+            text-align: center;
+            font-family: "Ubuntu", sans-serif;
         }
+        h2{
+            margin-top: 5px;
+            margin-bottom: 8px;
+            font-size: 20px;
+            text-align: center;
+            font-family: "Ubuntu", sans-serif;
+        }
+
         
     }
     
