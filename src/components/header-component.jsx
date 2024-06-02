@@ -16,7 +16,7 @@ export default function HeaderComponent() {
             </div>
             <div className="alert">
                 <p>Dia 06/07 às 15 horas!</p>
-                <p>Escolha o item que você deseja presentear os noivos na lista abaixo:</p>
+                <p>Escolha o item que você deseja levar para os noivos:</p>
             </div>
         </Container>
     )
