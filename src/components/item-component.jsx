@@ -42,7 +42,6 @@ export default function ItensComponent(props) {
 
             apiAuth.editQuantity(props.item.id)
             .then(()=> {
-                
                 setModalCheck(true);
                 setTimeout(()=> {
                     setModalCheck(false);
