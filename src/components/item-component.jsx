@@ -55,7 +55,7 @@ export default function ItensComponent(props) {
              })
                 .catch(err => {
                 console.log(err)
-                alert('Um erro aconteceu, atualize a página!')
+                alert(err.response.data)
          })
         })
         .catch((err)=> {
