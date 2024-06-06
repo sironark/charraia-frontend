@@ -61,6 +61,7 @@ export default function ItensComponent(props) {
         .catch((err)=> {
              console.log(err)
              alert('Um erro aconteceu, atualize a página!')
+             window.location.reload();
          })
         
 
