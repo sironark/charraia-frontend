@@ -137,7 +137,7 @@ export default function ItensComponent(props) {
                     placeholder="CELULAR" 
                     mask="(99) 99999-9999"
                     id="cell"
-                    value={cell}
+                    value={cell}// eslint-disable-next-line 
                     onChange={(e) => setCell(e.target.value.replace(/[\(\)\-, ]/g, ''))}
                     />
 
