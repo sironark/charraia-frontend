@@ -36,7 +36,7 @@ const Container = styled.div`
         padding-bottom: 5px;
         box-sizing: border-box;
         height: auto;
-        background-color: #fcfc7f;
+        background-color: #cb3f3a;
         display: flex;
         justify-content: center;
         align-items: center;
