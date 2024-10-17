@@ -7,15 +7,15 @@ export default function HeaderComponent() {
             <div className="title">
                 <div>
                 <div className="imgProfile"></div>
-                <h1>CHÁ DE PANELA</h1>
-                <h2>GLEISI E GABRIEL</h2>
+                <h1>CHÁ BAR</h1>
+                <h2>UDENES E FERNANDA</h2>
                 
                 <p>LISTA DE PRESENTES </p>  
                 </div>
                 
             </div>
             <div className="alert">
-                <p>Dia 06/07 às 15 horas!</p>
+                <p>Dia 07/12 às 13 horas!</p>
                 <p>Escolha o item que você deseja levar para os noivos:</p>
             </div>
         </Container>
