@@ -8,7 +8,7 @@ export default function HeaderComponent() {
                 <div>
                 <div className="imgProfile"></div>
                 <h1>CHÁ DE PANELA</h1>
-                <h2>MATHEUS E ANDREYNA</h2>
+                <h2>ANDREYNA E MATHEUS</h2>
                 
                 <p>LISTA DE PRESENTES </p>  
                 </div>
